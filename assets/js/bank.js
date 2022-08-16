@@ -6,6 +6,12 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     const depositBalance = document.getElementById('deposit');
     const depositOldString = depositBalance.innerText;
     const depositOld = parseFloat(depositOldString);
+
+    if (isNaN(depositNew) || depositNew <= 0) {
+        alert('Input valid Deposit amount')
+        return;
+
+    }
     const depositUpdate = depositNew + depositOld;
     depositBalance.innerText = depositUpdate.toFixed(2);
     depositInput.value = '';
@@ -27,14 +33,30 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const withdrawBalance = document.getElementById('withdraw');
     const withdrawOldString = withdrawBalance.innerText;
     const withdrawOld = parseFloat(withdrawOldString);
-    const withdrawUpdate = withdrawNew + withdrawOld;
-    withdrawBalance.innerText = withdrawUpdate.toFixed(2);
     withdrawInput.value = '';
+    if (isNaN(withdrawNew) || withdrawNew <= 0) {
+        alert('Input valid withdraw amount')
+        return;
+
+    }
+
 
     // Balance adjustment area
     const balance = document.getElementById('balance');
     const balanceOldString = balance.innerText;
     const balanceOld = parseFloat(balanceOldString);
+
+
+    if (withdrawNew > balanceOld) {
+        alert(
+            'Insufficient Balance');
+        return;
+
+    }
+    const withdrawUpdate = withdrawNew + withdrawOld;
+    withdrawBalance.innerText = withdrawUpdate.toFixed(2);
+
+
     const balanceNew = balanceOld - withdrawNew
     balance.innerText = balanceNew;
 })
