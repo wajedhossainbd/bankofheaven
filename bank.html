@@ -24,15 +24,15 @@
             <div class="grid grid-cols-3 gap-10 w-9/12 mx-auto">
                 <div class="bg-green-400 p-8 rounded-xl drop-shadow-md">
                     <h4 class="text-green-600 text-2xl font-bold">Deposit</h4>
-                    <h2 class="text-white text-8xl font-bold pt-10">$00</h2>
+                    <h2 class="text-white text-6xl font-bold pt-10">$<span id="deposit">00.00</span></h2>
                 </div>
                 <div class="bg-yellow-400 p-8 rounded-xl drop-shadow-md">
                     <h4 class="text-yellow-600 text-2xl font-bold">Withdraw</h4>
-                    <h2 class="text-white text-8xl font-bold pt-10">$00</h2>
+                    <h2 class="text-white text-6xl font-bold pt-10">$<span id="withdraw">00.00</span></h2>
                 </div>
                 <div class="bg-blue-400 p-8 rounded-xl drop-shadow-md">
                     <h4 class="text-blue-600 text-2xl font-bold">Balance</h4>
-                    <h2 class="text-white text-8xl font-bold pt-10">$00</h2>
+                    <h2 class="text-white text-6xl font-bold pt-10">$<span id="balance">00.00</span></h2>
                 </div>
             </div>
 
@@ -41,15 +41,17 @@
             <div class="grid grid-cols-2 gap-12 w-9/12 mx-auto">
                 <div class="bg-teal-400 grid grid-row p-8 rounded-xl">
                     <h2 class="py-5 text-teal-600 text-3xl font-bold">Deposit Money</h2>
-                    <input class="p-3 rounded mt-8" type="text" placeholder="$ enter your deposit amount">
-                    <button
+                    <input id="deposit-input" class="p-3 rounded mt-8" type="text"
+                        placeholder="$ enter your deposit amount">
+                    <button id="deposit-btn"
                         class="bg-white text-black text-md font-semibold py-3 mt-10 rounded w-1/5 hover:text-white hover:bg-teal-700 drop-shadow-md">Deposit</button>
                 </div>
                 <div class="bg-red-400 grid grid-row p-8 rounded-xl">
                     <h2 class="py-5 text-red-600 text-3xl font-bold">Withdraw Money</h2>
-                    <input class="p-3 rounded mt-8" type="text" placeholder="$ enter your withdraw amount">
-                    <button
-                        class="bg-white text-black text-md font-semibold py-3 mt-10 rounded w-1/5 hover:text-white hover:bg-red-700 drop-shadow-md">Deposit</button>
+                    <input id="withdraw-input" class="p-3 rounded mt-8" type="text"
+                        placeholder="$ enter your withdraw amount">
+                    <button id="withdraw-btn"
+                        class="bg-white text-black text-md font-semibold py-3 mt-10 rounded w-1/5 hover:text-white hover:bg-red-700 drop-shadow-md">Withdraw</button>
                 </div>
             </div>
         </section>
@@ -59,6 +61,7 @@
 
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/login.js"></script>
+    <script src="assets/js/bank.js"></script>
 </body>
 
 </html>
