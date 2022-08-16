@@ -21,7 +21,7 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     const balanceOldString = balance.innerText;
     const balanceOld = parseFloat(balanceOldString);
     const balanceNew = balanceOld + depositNew
-    balance.innerText = balanceNew;
+    balance.innerText = balanceNew.toFixed(2);
 
 })
 
@@ -58,5 +58,5 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
 
 
     const balanceNew = balanceOld - withdrawNew
-    balance.innerText = balanceNew;
+    balance.innerText = balanceNew.toFixed(2);
 })
