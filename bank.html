@@ -65,34 +65,35 @@
     <script src="assets/js/bank.js"></script> -->
 
     <header class="bg-slate-500 mx-auto shadow-md">
-        <h1 class="text-5xl font-semibold ml-12 py-3 w-9/12 text-slate-600">Bank of <span
-                class="text-5xl text-white font-bold">Heaven</span></h1>
+        <h1 class=" font-semibold ml-12 py-3 text-slate-600 sm:text-2xl md:text-3xl lg:text-5xl ">Bank of
+            <span class="text-white font-bold sm:text-2xl md:text-3xl lg:text-5xl">Heaven</span>
+        </h1>
     </header>
 
     <main>
-        <div id="balance-area" class="grid grid-cols-3 gap-12 mx-auto w-9/12 m-12">
-            <div class="bg-green-400 rounded-lg p-6 shadow-md">
+        <div id="balance-area" class="grid grid-cols-3 gap-12 mx-auto my-12 sm:block md:grid md:gap-2 md:w-full lg:grid gap-6 w-9/12 ">
+            <div class="bg-green-400 rounded-lg p-6 shadow-md sm:m-6">
                 <h3 class="text-5xl font-semibold text-green-600">Deposit</h3>
                 <h1 class="pt-12 text-6xl text-white font-bold">৳<span id="dep-total">00</span></h1>
             </div>
-            <div class="bg-red-400 rounded-lg p-6 shadow-md">
+            <div class="bg-red-400 rounded-lg p-6 shadow-md sm:m-6">
                 <h3 class="text-5xl font-semibold text-red-600">Withdraw</h3>
                 <h1 class="pt-12 text-6xl text-white font-bold">৳<span id="wtd-total">00</span></h1>
             </div>
-            <div class="bg-blue-400 rounded-lg p-6 shadow-md">
+            <div class="bg-blue-400 rounded-lg p-6 shadow-md sm:m-6">
                 <h3 class="text-5xl font-semibold text-blue-600">Balance</h3>
                 <h1 class="pt-12 text-6xl text-white font-bold">৳<span id="bal-total">00</span></h1>
             </div>
         </div>
-        <div id="input-area" class="grid grid-cols-2 gap-12 mx-auto w-9/12 ">
-            <div class="bg-yellow-400 rounded-lg px-8 py-6">
+        <div id="input-area" class="grid grid-cols-2 gap-12 mx-auto sm:block md:grid w-9/12">
+            <div class="bg-yellow-400 rounded-lg px-8 py-6 sm:m-6">
                 <h3 class="text-4xl font-semibold text-yellow-600">Deposit Money</h3>
                 <input id="dep-inp" class="block mt-12 px-6  py-4 w-full rounded-lg" type="text"
                     placeholder="Enter deposit amount">
                 <button id="dep-btn"
                     class="bg-white mt-12 px-5 py-2 text-lg font-bold rounded-md shadow-md mx-auto block hover:bg-yellow-600 hover:text-white">Deposit</button>
             </div>
-            <div class="bg-cyan-400 rounded-lg px-8 py-6">
+            <div class="bg-cyan-400 rounded-lg px-8 py-6 sm:m-6">
                 <h3 class="text-4xl font-semibold text-cyan-600">Withdraw Money</h3>
                 <input id="wtd-inp" class="block mt-12 px-6  py-4 w-full rounded-lg" type="text"
                     placeholder="Enter withdraw amount">
