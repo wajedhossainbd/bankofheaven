@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,6 +61,69 @@
 
 
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/bank.js"></script>
+</body>
+
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Bank of Heaven</title>
+</head>
+
+<body>
+    <header class="bg-slate-500 mx-auto shadow-md">
+        <h1 class="text-5xl font-semibold ml-12 py-3 w-9/12 text-slate-600">Bank of <span
+                class="text-5xl text-white font-bold">Heaven</span></h1>
+    </header>
+
+    <main>
+        <div id="balance-area" class="grid grid-cols-3 gap-12 mx-auto w-9/12 m-12">
+            <div class="bg-green-400 rounded-lg p-6 shadow-md">
+                <h3 class="text-5xl font-semibold text-green-600">Deposit</h3>
+                <h1 class="pt-12 text-6xl text-white font-bold">৳<span id="dep-total">00</span></h1>
+            </div>
+            <div class="bg-red-400 rounded-lg p-6 shadow-md">
+                <h3 class="text-5xl font-semibold text-red-600">Withdraw</h3>
+                <h1 class="pt-12 text-6xl text-white font-bold">৳<span id="wtd-total">00</span></h1>
+            </div>
+            <div class="bg-blue-400 rounded-lg p-6 shadow-md">
+                <h3 class="text-5xl font-semibold text-blue-600">Balance</h3>
+                <h1 class="pt-12 text-6xl text-white font-bold">৳<span id="bal-total">00</span></h1>
+            </div>
+        </div>
+        <div id="input-area" class="grid grid-cols-2 gap-12 mx-auto w-9/12 ">
+            <div class="bg-yellow-400 rounded-lg px-8 py-6">
+                <h3 class="text-4xl font-semibold text-yellow-600">Deposit Money</h3>
+                <input id="dep-inp" class="block mt-12 px-6  py-4 w-full rounded-lg" type="text"
+                    placeholder="Enter deposit amount">
+                <button id="dep-btn"
+                    class="bg-white mt-12 px-5 py-2 text-lg font-bold rounded-md shadow-md mx-auto block hover:bg-yellow-600 hover:text-white">Deposit</button>
+            </div>
+            <div class="bg-cyan-400 rounded-lg px-8 py-6">
+                <h3 class="text-4xl font-semibold text-cyan-600">Withdraw Money</h3>
+                <input id="wtd-inp" class="block mt-12 px-6  py-4 w-full rounded-lg" type="text"
+                    placeholder="Enter withdraw amount">
+                <button id="wtd-btn"
+                    class="bg-white mt-12 px-5 py-2 text-lg font-bold rounded-md shadow-md mx-auto block hover:bg-cyan-600 hover:text-white">Withdraw</button>
+            </div>
+        </div>
+    </main>
     <script src="assets/js/login.js"></script>
     <script src="assets/js/bank.js"></script>
 </body>
